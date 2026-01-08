@@ -1,6 +1,6 @@
 #Create-ADUsers.ps1 
 
-This script references [JackedProgrammer]'s(https://www.youtube.com/@jackedprogrammer) [youtube playlist](https://youtube.com/playlist?list=PLnK11SQMNnE4_mlkNufhyI4n-zOcqKqfr&si=THRzQvZhbGZqwQZW) on powershell automation, 
+This script references [JackedProgrammer's](https://www.youtube.com/@jackedprogrammer) [youtube playlist](https://youtube.com/playlist?list=PLnK11SQMNnE4_mlkNufhyI4n-zOcqKqfr&si=THRzQvZhbGZqwQZW) on powershell automation, 
 The script in the tutorial feautred:
   - **Importing the csv files**
   - **Error handling**
