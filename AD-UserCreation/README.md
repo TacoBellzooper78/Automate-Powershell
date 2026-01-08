@@ -33,6 +33,7 @@ However, my csv file is formatted like this:
 
 This required me to make another function to "normalize" the attributes in *$SyncFieldMap*. This function is *$Convert-SyncFieldMap*, it converts 
 this:
+```
 
 $SyncFieldMap=@{  
     id = "EmployeeID" 
@@ -40,8 +41,9 @@ $SyncFieldMap=@{
     lastName = "SurName"
     job_dept = "Title:Department"  
 }
-
+```
 into this:
+```
 $NormalizedMap = @{
     EmployeeID = @{
         Source = "id"
@@ -64,7 +66,7 @@ $NormalizedMap = @{
         Index  = 1
     }
 }
-
+```
 This change allows me to dynamically parse the second delimiter instead of repeatedly hard coding -split every time the key is job_dept.
 ### notes to be continued ###
 
