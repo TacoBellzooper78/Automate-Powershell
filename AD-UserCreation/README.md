@@ -1,6 +1,6 @@
 #Create-ADUsers.ps1 
 
-This script references [JackedProgrammer's](https://www.youtube.com/@jackedprogrammer) [youtube playlist](https://youtube.com/playlist?list=PLnK11SQMNnE4_mlkNufhyI4n-zOcqKqfr&si=THRzQvZhbGZqwQZW) on powershell automation, 
+This simple script references [JackedProgrammer's](https://www.youtube.com/@jackedprogrammer "JackedProgrammer Youtube") [youtube playlist](https://youtube.com/playlist?list=PLnK11SQMNnE4_mlkNufhyI4n-zOcqKqfr&si=THRzQvZhbGZqwQZW "Create Users Playlist") on powershell automation, 
 The script in the tutorial feautred:
   - **Importing the csv files**
   - **Error handling**
@@ -33,7 +33,7 @@ However, my csv file is formatted like this:
 
 This required me to make another function to "normalize" the attributes in *$SyncFieldMap*. This function is *$Convert-SyncFieldMap*, it converts 
 this:
-```
+```PowerShell
 
 $SyncFieldMap=@{  
     id = "EmployeeID" 
@@ -43,7 +43,7 @@ $SyncFieldMap=@{
 }
 ```
 into this:
-```
+```PowerShell
 $NormalizedMap = @{
     EmployeeID = @{
         Source = "id"
@@ -68,5 +68,5 @@ $NormalizedMap = @{
 }
 ```
 This change allows me to dynamically parse the second delimiter instead of repeatedly hard coding -split every time the key is job_dept.
-### notes to be continued ###
+###Select-PropertiesFromMap Function
 
